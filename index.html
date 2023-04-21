@@ -16,7 +16,7 @@
       const id = setInterval(() => {
         count++
         socket.emit('messaged',count)
-        if (count > 10) {
+        if (count > 10000) {
           clearInterval(id)
         }
       }, 1000);
